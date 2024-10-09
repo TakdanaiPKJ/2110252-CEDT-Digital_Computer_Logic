@@ -11,7 +11,7 @@
           <string>R</string>
         </entry>
       </elementAttributes>
-      <pos x="-280" y="-480"/>
+      <pos x="-280" y="-640"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -21,7 +21,7 @@
           <string>S</string>
         </entry>
       </elementAttributes>
-      <pos x="-280" y="-640"/>
+      <pos x="-280" y="-440"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -31,7 +31,7 @@
           <string>Q</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="-480"/>
+      <pos x="460" y="-600"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -41,7 +41,7 @@
           <string>\Q</string>
         </entry>
       </elementAttributes>
-      <pos x="460" y="-600"/>
+      <pos x="460" y="-480"/>
     </visualElement>
     <visualElement>
       <elementName>NOr</elementName>
@@ -63,6 +63,36 @@
       </elementAttributes>
       <pos x="60" y="-620"/>
     </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-280" y="-540"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-180" y="-640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>And</elementName>
+      <elementAttributes>
+        <entry>
+          <string>wideShape</string>
+          <boolean>true</boolean>
+        </entry>
+      </elementAttributes>
+      <pos x="-180" y="-480"/>
+    </visualElement>
   </visualElements>
   <wires>
     <wire>
@@ -78,28 +108,40 @@
       <p2 x="220" y="-600"/>
     </wire>
     <wire>
+      <p1 x="-240" y="-600"/>
+      <p2 x="-180" y="-600"/>
+    </wire>
+    <wire>
       <p1 x="220" y="-600"/>
       <p2 x="460" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-280" y="-440"/>
+      <p2 x="-180" y="-440"/>
     </wire>
     <wire>
       <p1 x="-40" y="-540"/>
       <p2 x="220" y="-540"/>
     </wire>
     <wire>
+      <p1 x="-280" y="-540"/>
+      <p2 x="-240" y="-540"/>
+    </wire>
+    <wire>
       <p1 x="-100" y="-620"/>
       <p2 x="60" y="-620"/>
     </wire>
     <wire>
-      <p1 x="-180" y="-460"/>
+      <p1 x="-100" y="-460"/>
       <p2 x="0" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-480"/>
+      <p2 x="-180" y="-480"/>
     </wire>
     <wire>
       <p1 x="100" y="-480"/>
       <p2 x="140" y="-480"/>
-    </wire>
-    <wire>
-      <p1 x="-280" y="-480"/>
-      <p2 x="-180" y="-480"/>
     </wire>
     <wire>
       <p1 x="140" y="-480"/>
@@ -111,15 +153,7 @@
     </wire>
     <wire>
       <p1 x="-280" y="-640"/>
-      <p2 x="-100" y="-640"/>
-    </wire>
-    <wire>
-      <p1 x="-100" y="-640"/>
-      <p2 x="-100" y="-620"/>
-    </wire>
-    <wire>
-      <p1 x="-180" y="-480"/>
-      <p2 x="-180" y="-460"/>
+      <p2 x="-180" y="-640"/>
     </wire>
     <wire>
       <p1 x="20" y="-580"/>
@@ -136,6 +170,14 @@
     <wire>
       <p1 x="140" y="-560"/>
       <p2 x="140" y="-480"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-600"/>
+      <p2 x="-240" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-240" y="-540"/>
+      <p2 x="-240" y="-480"/>
     </wire>
   </wires>
   <measurementOrdering/>
